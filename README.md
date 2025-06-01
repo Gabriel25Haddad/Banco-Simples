@@ -1,3 +1,5 @@
+# Projeto Banco
+
 Este é um projeto simples de simulação de operações bancárias em Java. O objetivo é demonstrar conceitos básicos de orientação a objetos, como encapsulamento, construtores, métodos e uso de classes auxiliares para logging.
 
 ## Funcionalidades
@@ -7,10 +9,12 @@ Este é um projeto simples de simulação de operações bancárias em Java. O o
 - Saque de valores, com verificação de saldo.
 - Registro de operações no console via classe de log.
 - Exibição do saldo e informações da conta.
+- Exibição do saldo total do banco ao final da execução.
 
 ## Estrutura dos Arquivos
 
 - `Account.java`: Classe que representa uma conta bancária e suas operações.
+- `Bank.java`: Classe responsável por gerenciar as contas e calcular o saldo total do banco.
 - `Log.java`: Classe responsável por registrar mensagens de log no console.
 - `app.java`: Classe principal para executar e testar as funcionalidades do projeto.
 
@@ -28,7 +32,8 @@ Este é um projeto simples de simulação de operações bancárias em Java. O o
 
 ## Exemplo de Uso
 
-Ao executar o projeto, serão realizados depósitos e saques em uma conta, e as operações serão exibidas no console, incluindo mensagens de log e o saldo final.
+Ao executar o projeto, você poderá criar contas, realizar depósitos e saques, e ao final visualizar todas as contas criadas, seus saldos e o saldo total do banco. Todas as operações são registradas no console.
 
+---
 
 Projeto desenvolvido para fins de estudo e prática de programação orientada a objetos em Java.

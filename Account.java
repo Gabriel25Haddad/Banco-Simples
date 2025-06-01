@@ -33,15 +33,20 @@ public class Account{
 
     // Realizar saque, retorna true se for possível, false caso contrário
     public boolean sacar(double valor){
-        if(saldo<valor){
-            logger.out("SAQUE - R$ " + valor + " Seu saldo atual é de R$ "+ saldo);
-            return false;
+        if(saldo<valor){ // Verifica se o saldo é suficiente para o saque
+            logger.out("SAQUE - R$ " + valor + " Seu saldo atual é de R$ "+ saldo); // Log de saldo insuficiente
+            return false; // Retorna falso se não for possível sacar
         }
         else{
-            saldo -= valor;
-            logger.out("SAQUE - R$ " + valor + " Seu saldo: R$ "+ saldo);
-            return true;
+            saldo -= valor; // Subtrai o valor do saldo
+            logger.out("SAQUE - R$ " + valor + " Seu saldo: R$ "+ saldo); // Log de saque realizado
+            return true; // Retorna verdadeiro se o saque foi realizado
         }
+    }
+
+    // Retorna o saldo atual da conta
+    public double getSaldo(){
+        return saldo;
     }
 
     // Retorna uma formatação em String da conta
